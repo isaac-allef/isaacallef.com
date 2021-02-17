@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Heading, Text, Image, Center } from "@chakra-ui/react";
 
 export default function AboutMe() {
     return (
@@ -20,7 +20,17 @@ export default function AboutMe() {
                         </Text>
                     </Box>
                 </GridItem>
-                <GridItem colSpan={1} bg="black" />
+                <GridItem colSpan={1}>
+                    <Center>
+                        <Image
+                            borderRadius="full"
+                            boxSize="210px"
+                            src="https://bit.ly/sage-adebayo"
+                            alt="Segun Adebayo"
+                            fallbackSrc="https://via.placeholder.com/150"
+                        />
+                    </Center>
+                </GridItem>
         </Grid>
     )
 }
