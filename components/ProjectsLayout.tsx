@@ -3,7 +3,11 @@ import { Center, Grid, GridItem, Heading, Icon, Box, Image, Stack, HStack, VStac
 
 export default function ProjectsLayout() {
     return (
-        <>
+        <VStack
+            spacing={'35'}
+            align="stretch"
+            marginBottom='44'
+            >
             <Heading variant='title2'>Projects.</Heading>
             <SimpleGrid columns={2} spacing={10}>
                 <Center height='300px' border='1px solid'></Center>
@@ -14,6 +18,6 @@ export default function ProjectsLayout() {
             <Center>
                 <Icon as={ChevronDownIcon} w={6} h={6} />
             </Center>
-        </>
+        </VStack>
     )
 }

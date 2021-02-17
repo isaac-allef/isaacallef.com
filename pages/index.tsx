@@ -14,6 +14,8 @@ export default function Home() {
     templateRows="repeat(5, 1fr)"
     templateColumns="repeat(1, 1fr)"
     gap={0}
+    marginLeft='100px'
+    marginRight='100px'
     >
         <GridItem colSpan={1}>
           <Header />

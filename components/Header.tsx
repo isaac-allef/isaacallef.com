@@ -5,10 +5,11 @@ export default function Header() {
         <Flex
         alignItems='center'
         justifyContent='space-between'
-        px='20'
+        // px='20'
         py='3'
         // border= '1px solid'
         marginBottom='44'
+        marginTop='44'
       >
         <Heading variant='title1'>Isaac Allef</Heading>
         <HStack spacing='6'>

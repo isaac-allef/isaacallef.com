@@ -1,15 +1,17 @@
-import { Box, Grid, GridItem, Heading, Text, Image, Center } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Heading, Text, Image, Center, Flex } from "@chakra-ui/react";
 
 export default function AboutMe() {
     return (
-        <Grid
-            templateRows="repeat(1, 1fr)"
-            templateColumns="repeat(3, 1fr)"
-            gap={1}
-            >
-                <GridItem colSpan={2}>
-                    <Box>
-                        <Heading variant='title3' marginBottom='42'>
+        <Flex
+        alignItems='center'
+        justifyContent='space-between'
+        // px='20'
+        py='3'
+        // border= '1px solid'
+        marginBottom='44'
+      >
+                    <Box marginRight='120'>
+                        <Heading variant='title3' marginBottom='42' maxWidth='600px'>
                         Hello ✋, I'm Isaac Allef && I'm a Software Developer
                         </Heading>
                         <Text variant='small' marginBottom='28'>
@@ -19,18 +21,13 @@ export default function AboutMe() {
                         I strive to improve the readability and quality of my codes every day because I know that it will make me a coder better. But I also strive to improve my soft skills because it will make me a solver problems better.
                         </Text>
                     </Box>
-                </GridItem>
-                <GridItem colSpan={1}>
-                    <Center>
                         <Image
                             borderRadius="full"
-                            boxSize="210px"
+                            boxSize="270px"
                             src="https://bit.ly/sage-adebayo"
                             alt="Segun Adebayo"
                             fallbackSrc="https://via.placeholder.com/150"
                         />
-                    </Center>
-                </GridItem>
-        </Grid>
+        </Flex>
     )
 }

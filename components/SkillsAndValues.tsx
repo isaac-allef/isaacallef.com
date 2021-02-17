@@ -7,6 +7,7 @@ export default function SkillsAndValues() {
             templateRows="repeat(1, 1fr)"
             templateColumns="repeat(2, 1fr)"
             gap={1}
+            marginBottom='44'
             >
                 <GridItem colSpan={1}>
                 <AboutMeColumn  
