@@ -1,7 +1,7 @@
 // import Head from 'next/head'
 
 import { Grid, GridItem } from "@chakra-ui/react";
-import Description from "../components/Description";
+import AboutMe from "../components/AboutMe";
 import Foot from "../components/Foot";
 import Header from "../components/Header";
 import ProjectsLayout from "../components/ProjectsLayout";
@@ -20,7 +20,7 @@ export default function Home() {
         </GridItem>
         
         <GridItem colSpan={1}>
-          <Description />
+          <AboutMe />
         </GridItem>
         
         <GridItem colSpan={1}>

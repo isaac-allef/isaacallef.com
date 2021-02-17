@@ -12,6 +12,7 @@ const customTheme = extendTheme({
         bold: 700,
     },
     space: {
+        "20": '20px',
         "28": '28px',
         "42": '42px',
         "44": '44.65px',
@@ -26,7 +27,7 @@ const customTheme = extendTheme({
     },
     colors: {
         gray: {
-            100: '#F2F2F2',
+            100: '#DADADA',
             200: '#4A4A4A',
             300: '#141414',
             400: '#101010',
@@ -35,8 +36,17 @@ const customTheme = extendTheme({
     components: {
         Heading: {
             variants: {
-                large: { fontSize: '2xl', color: 'gray.400'},
-                normal: { fontSize: 'xl', color: 'gray.400' },
+                title1: { fontSize: '2xl', color: 'gray.200'},
+                title2: { 
+                    fontSize: 'xl', 
+                    color: 'gray.200', 
+                    borderBottom: '3px solid', 
+                    borderColor: 'gray.100', 
+                    paddingBottom: '6px', 
+                    paddingRight: '15px', 
+                    width: 'max-content' 
+                },
+                title3: { fontSize: 'lg', color: 'gray.200' },
             },
         },
         Text: {

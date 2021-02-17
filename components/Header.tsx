@@ -10,7 +10,7 @@ export default function Header() {
         // border= '1px solid'
         marginBottom='44'
       >
-        <Heading variant='large'>Isaac Allef</Heading>
+        <Heading variant='title1'>Isaac Allef</Heading>
         <HStack spacing='6'>
           <Button variant='link'>Home</Button>
           <Button variant='link'>About</Button>

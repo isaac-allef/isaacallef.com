@@ -1,6 +1,6 @@
 import { Box, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 
-export default function Description() {
+export default function AboutMe() {
     return (
         <Grid
             templateRows="repeat(1, 1fr)"
@@ -9,7 +9,7 @@ export default function Description() {
             >
                 <GridItem colSpan={2}>
                     <Box>
-                        <Heading variant='normal' marginBottom='42'>
+                        <Heading variant='title3' marginBottom='42'>
                         Hello ✋, I'm Isaac Allef && I'm a Software Developer
                         </Heading>
                         <Text variant='small' marginBottom='28'>
