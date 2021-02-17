@@ -1,3 +1,4 @@
+import React from 'react';
 import { VStack, Heading } from "@chakra-ui/react";
 import AboutMeRow from "./AboutMeRow";
 
@@ -18,11 +19,12 @@ export default function AboutMeColumn({ title, rows }: Request) {
             align="stretch"
             >
             <Heading variant='title2'>{ title }</Heading>
-            {rows.map(row => (
-                <AboutMeRow 
-                    subTitle={ row.subTitle }
-                    text={ row.text }
-                />
+            {React.Children.toArray(
+                rows.map(row => (
+                    <AboutMeRow 
+                        subTitle={ row.subTitle }
+                        text={ row.text }
+                    />)
             ))}
         </VStack>
     )
