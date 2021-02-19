@@ -23,7 +23,7 @@ export default function AboutMe() {
                     </Box>
                         <Image
                             borderRadius="full"
-                            boxSize="270px"
+                            boxSize="16rem"
                             src="https://bit.ly/sage-adebayo"
                             alt="Segun Adebayo"
                             fallbackSrc="https://via.placeholder.com/150"
